@@ -1,0 +1,207 @@
+.main-content {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Title and Rectangle in the same row with rectangle on the left */
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; /* Space between title and content1 */
+}
+
+/* Yellow Rectangle to the left of title */
+.title-wrapper .yellow-rectangle {
+  width: 10px;
+  height: 70px;
+  background-color: #fdc404;
+  margin-right: 20px; /* Space between rectangle and title */
+}
+
+/* Contact Us Title */
+.title-wrapper .title {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 78px;
+  color: #071e57;
+  text-align: center;
+}
+
+/* Center the middle section inside the container */
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; /* Restrict maximum width */
+  margin: 0 auto; /* Center the middle in the container */
+}
+
+/* Main content1 under the title */
+.middle .content1 {
+  font-family: "Poppins";
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 33px;
+  text-align: center;
+  color: rgba(7, 30, 87, 0.91);
+  max-width: 800px;
+  margin-bottom: 20px; /* More space before the next row */
+}
+
+/* Flexbox layout for the penguin, content3, and content4 */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; /* Take full width of the middle container */
+  max-width: 800px; /* Adjust the maximum width for the content */
+  gap: 40px; /* Add space between content and penguin */
+}
+
+/* Penguin on the left */
+.partners-penguins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.partners-penguins img {
+  max-width: 150px; /* Increase size of penguin */
+  max-height: 150px;
+}
+
+/* Content3 on the left (General Inquiries) */
+.content3 {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(7, 30, 87, 0.91);
+  text-align: left;
+}
+
+/* Content4 on the right (Social Media) */
+.content4 {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(7, 30, 87, 0.91);
+  text-align: left;
+}
+
+/* Footer text at the bottom */
+.footer-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: rgba(7, 30, 87, 0.91);
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* General layout for the WHY section */
+.why-section {
+  display: flex;
+  align-items: center; /* Align everything horizontally at the center */
+  padding: 20px 0;
+  max-width: 1200px;
+  margin-top: 10px;
+  margin: 0 auto;
+  gap: 20px; /* Space between the WHY text, yellow rectangle, and why items */
+}
+
+/* Left section: "WHY" text */
+.why-left {
+  display: flex;
+  align-items: center; /* Align WHY text vertically centered */
+  margin-right: 30px; /* Increase space between WHY text and yellow rectangle */
+}
+
+.why-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #071e57;
+  text-align: center;
+  line-height: 1.2;
+  margin-right: 30px; /* Additional space between WHY and yellow rectangle */
+}
+
+/* Yellow Rectangle in the middle */
+.yellow-rectangle {
+  width: 10px;
+  height: 200px; /* Set a taller height for the rectangle */
+  background-color: #fdc404;
+}
+
+/* Right section: Innovation, Integration, Collaboration */
+.why-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align content to the left */
+  max-width: 600px; /* Constrain the width to shorten the lines */
+  margin-top: 20px;
+}
+
+/* Titles (Innovation, Integration, Collaboration) */
+.why-item h4 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  font-size: px;
+  color: #071e57;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Content under titles */
+.why-item p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #071e57;
+  text-align: left; /* Align text to the left */
+  margin-bottom: 20px;
+  max-width: 600px; /* Set max width to control line length */
+}
+
+.get-in-touch p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #071e57;
+  margin-bottom: 30px;
+}
+
+.get-in-touch a {
+  color: #f9c720;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.get-in-touch :hover {
+  color: #e7b102;
+}

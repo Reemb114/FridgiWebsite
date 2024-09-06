@@ -1,0 +1,127 @@
+/* General layout for the main content */
+.main-content {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Title and Rectangle in the same row with rectangle on the left */
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; /* Space between title and content1 */
+}
+
+/* Yellow Rectangle to the left of title */
+.title-wrapper .yellow-rectangle {
+  width: 10px;
+  height: 70px;
+  background-color: #fdc404;
+  margin-right: 20px; /* Space between rectangle and title */
+}
+
+/* Contact Us Title */
+.title-wrapper .title {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 78px;
+  color: #071e57;
+  text-align: center;
+}
+
+/* Center the middle section inside the container */
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; /* Restrict maximum width */
+  margin: 0 auto; /* Center the middle in the container */
+}
+
+/* Main content1 under the title */
+.middle .content1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: rgba(7, 30, 87, 0.91);
+  max-width: 800px;
+  margin-bottom: 40px; /* More space before the next row */
+}
+
+/* Flexbox layout for the penguin, content3, and content4 */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; /* Take full width of the middle container */
+  max-width: 800px; /* Adjust the maximum width for the content */
+  gap: 40px; /* Add space between content and penguin */
+}
+
+/* Penguin on the left */
+.fridgi-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fridgi-icon-container img {
+  max-width: 200px; /* Increase size of penguin */
+  height: auto;
+}
+
+/* Content3 on the left (General Inquiries) */
+.content3 {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(7, 30, 87, 0.91);
+  text-align: left;
+}
+.content3 a {
+  color: #fdc404;
+  font-weight: 300;
+}
+.content3 a:hover {
+  color: #e7b102;
+  font-weight: 300;
+}
+
+/* Content4 on the right (Social Media) */
+.content4 {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(7, 30, 87, 0.91);
+  text-align: left;
+}
+
+/* Footer text at the bottom */
+.footer-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: rgba(7, 30, 87, 0.91);
+  text-align: center;
+  margin-top: 40px;
+}

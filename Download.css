@@ -1,0 +1,66 @@
+.main-content {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.title-wrapper .yellow-rectangle {
+  width: 10px;
+  height: 70px;
+  background-color: #fdc404;
+  margin-right: 20px;
+}
+
+.title-wrapper .title {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 78px;
+  color: #071e57;
+  text-align: center;
+}
+.sub-title {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 78px;
+  color: #071e57;
+  text-align: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.middle .content1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: rgba(7, 30, 87, 0.91);
+  max-width: 800px;
+  margin-bottom: 40px;
+}

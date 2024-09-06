@@ -1,0 +1,355 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f9ff;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.landpage {
+  background: linear-gradient(
+    180deg,
+    rgb(238, 248.2, 255) 10.5%,
+    rgb(245.33, 251.13, 255) 24.5%,
+    rgb(255, 255, 255) 44%
+  );
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative !important;
+}
+
+.landpage .div {
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  width: 1440px;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 55px;
+}
+
+.landpage .overlap {
+  position: absolute;
+  width: 1539px;
+  height: 2269px;
+  top: 1356px;
+  left: -99px;
+}
+
+.landpage .fridgi-icon-4 {
+  position: absolute;
+  width: 149px;
+  height: 115px;
+  top: 0;
+  left: 1284px;
+}
+
+.landpage .bottom {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  bottom: 0;
+  left: 0;
+  background-color: #071e57;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.landpage .component {
+  position: relative;
+  width: 1403px;
+  height: 34px;
+  margin: 0 auto;
+  top: 10px;
+}
+
+.landpage .overlap-group-2 {
+  position: absolute;
+  width: 407px;
+  height: 30px;
+  top: 4px;
+  padding: 2px;
+  left: 29px;
+  display: flex;
+  align-items: center;
+}
+
+.landpage .product,
+.landpage .partners,
+.landpage .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 29px;
+  position: absolute;
+  top: 0;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #eef8ff;
+  font-size: 14px;
+  line-height: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.landpage .product:hover,
+.landpage .partners:hover,
+.landpage .about:hover {
+  color: #3da9f1;
+}
+
+.landpage .product {
+  width: 151px;
+  left: 82px;
+}
+
+.landpage .partners {
+  width: 155px;
+  left: 183px;
+}
+
+.landpage .about {
+  width: 96px;
+  left: 311px;
+  top: 2px;
+}
+
+.landpage .logo {
+  position: relative;
+  display: flex;
+  width: 70px;
+  height: 29px;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  padding: 2px;
+  top: 0;
+  left: 0;
+}
+
+.landpage .fridgi-icon-5 {
+  position: relative;
+  width: 15px !important;
+  height: 17px !important;
+}
+
+.landpage .fridgi-logo {
+  position: relative;
+  width: 63px !important;
+  height: 20px !important;
+}
+
+.landpage .action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 34px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 1268px;
+  background-color: #3da9f1;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landpage .action-button:hover {
+  background-color: #2b7cb9;
+}
+
+.landpage .text-wrapper-7 {
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #071e57;
+  font-size: 14px;
+}
+
+.landpage .info-button {
+  all: unset;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #eef8ff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 22px;
+  position: absolute;
+  top: 7px;
+  left: 1167px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.landpage .info-button:hover {
+  color: #3da9f1;
+}
+
+.landpage .top {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landpage .component-2 {
+  margin: auto;
+  position: fixed;
+  width: 1403px;
+  height: 34px;
+  top: 10px;
+}
+
+.landpage .why-fridgi-2 {
+  color: #365d75;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.landpage .why-fridgi-2:hover {
+  color: #3da9f1;
+}
+
+.landpage .logo img {
+  width: 35px;
+  height: auto;
+}
+
+.landpage .fridgi-logo {
+  width: 150px;
+  height: auto;
+}
+
+.landpage .action-button .text-wrapper-14 {
+  font-size: 14px;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes full height of the viewport */
+  box-sizing: border-box;
+}
+/* Styles for the new main content section */
+.main-content .container {
+  padding: 20px;
+}
+
+.main-content .logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content .logo-section img {
+  width: 100px;
+  position: absolute;
+  width: 189px;
+  height: 162px;
+  left: 194px;
+  top: 80px;
+
+  background: url(image.png);
+  border-radius: 132px;
+}
+
+.main-content .title {
+  /* Meet Fridgi, your first kitchen AI manager. */
+
+  position: absolute;
+  width: 809px;
+  height: 156px;
+  left: 353px;
+  top: 85px;
+
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 78px;
+  text-align: center;
+
+  color: #071e57;
+}
+
+.main-content .phone {
+  position: absolute;
+  width: 422px;
+  height: 540px;
+  left: 467px;
+  top: 267px;
+  position: absolute;
+  width: 422px;
+  height: 540px;
+  left: 467px;
+  top: 267px;
+
+  background: url(image.png);
+  filter: drop-shadow(0px 4px 4px rgba(132, 151, 164, 0.74));
+  border-radius: 2px;
+}
+
+.main-content .phone video {
+  width: 550px;
+  height: 450px;
+  margin-bottom: 0;
+}
+.main-content .phone img {
+  width: 200;
+  height: auto;
+}
+
+.main-content .yellow-rectangle {
+  /* Rectangle 3 */
+
+  position: absolute;
+  width: 10px;
+  height: 145px;
+  left: 390px;
+  top: 96px;
+
+  background: #fdc404;
+}
+
+.main-content .penguin {
+  position: absolute;
+  bottom: 80px;
+  right: -130px;
+  max-width: 250px;
+  height: 150px;
+  z-index: -1;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  flex: content;
+}
