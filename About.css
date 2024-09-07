@@ -6,34 +6,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
 .title-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 3vh;
 }
 
 .title-wrapper .yellow-rectangle {
-  width: 10px;
-  height: 70px;
+  width: 1vw; /* Maintain a relative width */
+  height: 6vh; /* Fixed height to keep it visible */
   background-color: #fdc404;
-  margin-right: 20px;
-  margin-top: 15px;
+  margin-right: 1vw;
+  margin-top: 1vh;
 }
 
 .title-wrapper .title {
   font-family: "Lexend Deca", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 62px;
-  line-height: 78px;
+  font-size: 4vw; /* Responsive font size */
+  line-height: 1.1;
   color: #071e57;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 1vh;
 }
 
 .middle {
@@ -41,8 +41,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 1200px;
+  width: 80vw; /* Default width */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -50,29 +50,131 @@
   font-family: "Lexend Deca", sans-serif;
   font-style: normal;
   font-weight: 100;
-  font-size: 19px;
-  line-height: 33px;
+  font-size: 2vw; /* Responsive font size */
+  line-height: 1.5;
   text-align: center;
   color: rgba(7, 30, 87, 0.91);
-  max-width: 800px;
-  margin-bottom: 40px;
+  max-width: 70vw; /* Default width for text lines */
+  margin-bottom: 3vh;
 }
 
+/* Penguins at the bottom */
 .penguins {
   position: fixed;
-  bottom: 2.5vh;
+  bottom: 2vh; /* Stick penguins to the bottom */
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  align-items: flex-end;
   z-index: 1;
 }
 
 .penguins img {
-  width: 35vw;
+  width: 35vw; /* Default size for penguins */
   height: auto;
-  max-width: 35vw;
+  max-width: 50vw; /* Ensure it doesn't get too large */
+  max-height: 25vh; /* Limit the height */
+}
+
+/* Media queries for specific screen sizes */
+
+/* For ultrawide screens (2000px and above) */
+@media (min-width: 2000px) {
+  .title-wrapper .title {
+    font-size: 2.5vw; /* Slightly smaller font for ultrawide screens */
+  }
+
+  .middle .content1 {
+    font-size: 1vw; /* Text size for ultrawide screens */
+    max-width: 90vw; /* Increase max-width for better text flow */
+  }
+
+  .penguins img {
+    width: 30vw; /* Reduce penguin size */
+  }
+  .penguins {
+    bottom: 0.2vh;
+  }
+}
+
+/* For large screens (1200px to 2000px) */
+@media (min-width: 1200px) and (max-width: 2000px) {
+  .title-wrapper .title {
+    font-size: 3vw; /* Decrease font size */
+  }
+
+  .middle .content1 {
+    font-size: 1.5vw;
+    max-width: 50vw;
+  }
+
+  .penguins img {
+    width: 40vw; /* Adjust penguin size */
+  }
+}
+
+/* For medium screens (760px to 1200px) */
+@media (min-width: 760px) and (max-width: 1200px) {
+  .title-wrapper .title {
+    font-size: 3.5vw;
+  }
+
+  .middle .content1 {
+    font-size: 1.6vw;
+    max-width: 70vw; /* Adjust width for readability */
+  }
+
+  .penguins img {
+    width: 45vw; /* Scale penguins */
+  }
+
+  .penguins {
+    bottom: 2.5vh;
+  }
+}
+
+/* For small screens (below 760px) */
+@media (max-width: 759px) {
+  .title-wrapper .yellow-rectangle {
+    width: 3vw; /* Slightly larger for small screens */
+    height: 8vh; /* Fixed height */
+  }
+
+  .title-wrapper .title {
+    font-size: 4.5vw; /* Larger font for small screens */
+  }
+
+  .middle .content1 {
+    font-size: 2.5vw; /* Increase text size */
+    max-width: 90vw; /* Ensure readability */
+  }
+
+  .penguins img {
+    width: 50vw; /* Larger penguins */
+  }
+}
+
+/* For mobile screens (below 480px) */
+@media (max-width: 480px) {
+  .title-wrapper .yellow-rectangle {
+    width: 2.5vw; /* Slightly larger for mobile */
+    height: 8vh;
+  }
+
+  .title-wrapper .title {
+    font-size: 7vw; /* Larger title font for mobile */
+  }
+
+  .middle .content1 {
+    font-size: 3.5vw; /* Larger text for mobile */
+    max-width: 100vw; /* Full width on mobile */
+  }
+
+  .penguins img {
+    width: 60vw; /* Larger penguins for mobile */
+  }
+  .penguins {
+    bottom: 4.5vh;
+  }
 }
