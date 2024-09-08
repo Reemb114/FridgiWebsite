@@ -164,6 +164,7 @@ body {
   text-align: left;
   margin-bottom: 1.25em;
   max-width: 100%;
+  text-align: center;
 }
 
 /* Media Queries for Vertical (Portrait) and Horizontal (Landscape) Adjustments */
@@ -220,6 +221,7 @@ body {
 
   .why-item p {
     font-size: 1.5vw;
+    text-align: center;
   }
 }
 
@@ -245,6 +247,7 @@ body {
 
   .why-item p {
     font-size: 1.25rem;
+    text-align: center;
   }
 }
 
@@ -268,6 +271,7 @@ body {
 
   .why-item p {
     font-size: 1.125rem;
+    text-align: center;
   }
   .why-section {
     margin-right: 17%;
@@ -294,6 +298,7 @@ body {
 
   .why-item p {
     font-size: 1rem;
+    text-align: center;
   }
   .why-section {
     margin-right: 15%;
