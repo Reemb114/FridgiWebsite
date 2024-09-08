@@ -1,3 +1,15 @@
+/* Base styles for consistent scaling */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content layout */
 .main-content {
   position: relative;
   width: 100%;
@@ -6,202 +18,399 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.75em;
+  padding-bottom: 3.125em;
 }
 
-/* Title and Rectangle in the same row with rectangle on the left */
+/* Title wrapper */
 .title-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px; /* Space between title and content1 */
+  margin-bottom: 2em;
 }
 
-/* Yellow Rectangle to the left of title */
+/* Yellow rectangle next to the title */
 .title-wrapper .yellow-rectangle {
-  width: 10px;
-  height: 70px;
+  width: 1.25rem;
+  height: 5rem;
   background-color: #fdc404;
-  margin-right: 20px; /* Space between rectangle and title */
+  margin-right: 1.5rem;
 }
 
-/* Contact Us Title */
+/* Title - responsive font size */
 .title-wrapper .title {
-  font-family: "Lexend Deca", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 58px;
-  line-height: 78px;
+  font-size: 5vw; /* Responsive text size based on viewport width */
+  line-height: 1.2;
   color: #071e57;
   text-align: center;
 }
 
-/* Center the middle section inside the container */
+/* Middle section */
 .middle {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 1200px; /* Restrict maximum width */
-  margin: 0 auto; /* Center the middle in the container */
-}
-
-/* Main content1 under the title */
-.middle .content1 {
-  font-family: "Poppins";
-  font-style: normal;
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 33px;
-  text-align: center;
-  color: rgba(7, 30, 87, 0.91);
-  max-width: 800px;
-  margin-bottom: 20px; /* More space before the next row */
-}
-
-/* Flexbox layout for the penguin, content3, and content4 */
-.content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%; /* Take full width of the middle container */
-  max-width: 800px; /* Adjust the maximum width for the content */
-  gap: 40px; /* Add space between content and penguin */
-}
-
-/* Penguin on the left */
-.partners-penguins {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-}
-
-.partners-penguins img {
-  max-width: 150px; /* Increase size of penguin */
-  max-height: 150px;
-}
-
-/* Content3 on the left (General Inquiries) */
-.content3 {
-  font-family: "Lexend Deca", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  color: rgba(7, 30, 87, 0.91);
-  text-align: left;
-}
-
-/* Content4 on the right (Social Media) */
-.content4 {
-  font-family: "Lexend Deca", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  color: rgba(7, 30, 87, 0.91);
-  text-align: left;
-}
-
-/* Footer text at the bottom */
-.footer-text {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 33px;
-  color: rgba(7, 30, 87, 0.91);
-  text-align: center;
-  margin-top: 40px;
-}
-
-/* General layout for the WHY section */
-.why-section {
-  display: flex;
-  align-items: center; /* Align everything horizontally at the center */
-  padding: 20px 0;
-  max-width: 1200px;
-  margin-top: 10px;
+  width: 80vw;
+  max-width: 68.75rem; /* 1100px */
   margin: 0 auto;
-  gap: 20px; /* Space between the WHY text, yellow rectangle, and why items */
 }
 
-/* Left section: "WHY" text */
-.why-left {
-  display: flex;
-  align-items: center; /* Align WHY text vertically centered */
-  margin-right: 30px; /* Increase space between WHY text and yellow rectangle */
-}
-
-.why-text {
+/* Responsive content text under the title */
+.middle .content1 {
   font-family: "Lexend Deca", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  color: #071e57;
+  font-weight: 100;
+  font-size: 1.5vw; /* Responsive text size */
+  line-height: 1.6;
   text-align: center;
-  line-height: 1.2;
-  margin-right: 30px; /* Additional space between WHY and yellow rectangle */
+  color: rgba(7, 30, 87, 0.91);
+  max-width: 65vw;
+  margin-bottom: 1.875em;
 }
 
-/* Yellow Rectangle in the middle */
-.yellow-rectangle {
-  width: 10px;
-  height: 200px; /* Set a taller height for the rectangle */
-  background-color: #fdc404;
-}
-
-/* Right section: Innovation, Integration, Collaboration */
-.why-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; /* Align content to the left */
-  max-width: 600px; /* Constrain the width to shorten the lines */
-  margin-top: 20px;
-}
-
-/* Titles (Innovation, Integration, Collaboration) */
-.why-item h4 {
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 700;
-  font-size: px;
-  color: #071e57;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-/* Content under titles */
-.why-item p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #071e57;
-  text-align: left; /* Align text to the left */
-  margin-bottom: 20px;
-  max-width: 600px; /* Set max width to control line length */
-}
-
+/* Get in touch section */
 .get-in-touch p {
-  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.2rem; /* Changed to rem for better readability */
   line-height: 1.6;
   color: #071e57;
-  margin-bottom: 30px;
+  margin-bottom: 1.875em;
 }
 
 .get-in-touch a {
   color: #f9c720;
   text-decoration: none;
   font-weight: 700;
-  margin-bottom: 30px;
+  font-size: 1.3rem; /* Changed to rem for consistent font size */
 }
-.get-in-touch :hover {
+
+.get-in-touch a:hover {
   color: #e7b102;
+}
+
+/* Penguins section */
+.partners-penguins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-penguins img {
+  max-width: 20vw; /* Responsive image size */
+  height: auto;
+}
+
+/* WHY section */
+.why-section {
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+  max-width: 75rem; /* 1200px */
+  gap: 2em;
+  margin-right: 15%;
+}
+
+/* WHY left section */
+.why-left {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.why-text {
+  font-weight: 700;
+  font-size: 4vw; /* Responsive text size */
+  color: #071e57;
+  text-align: center;
+  line-height: 1.2;
+  margin-right: 1.5rem;
+}
+
+/* Yellow rectangle in WHY section */
+.why-left .yellow-rectangle {
+  width: 1rem;
+  height: 10rem;
+  background-color: #fdc404;
+}
+
+/* WHY right section */
+.why-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 37.5rem;
+}
+
+/* WHY section titles */
+.why-item h4 {
+  font-weight: 700;
+  font-size: 2vw; /* Responsive text size */
+  color: #071e57;
+  margin-bottom: 0.5rem;
+}
+
+/* WHY section paragraphs */
+.why-item p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw; /* Responsive text size */
+  line-height: 1.6;
+  color: #071e57;
+  text-align: left;
+  margin-bottom: 1.25em;
+  max-width: 100%;
+}
+
+/* Media Queries for Vertical (Portrait) and Horizontal (Landscape) Adjustments */
+
+/* Portrait adjustments for all devices */
+@media (orientation: portrait) {
+  .title-wrapper .title {
+    font-size: 6vw; /* Larger for vertical screens */
+  }
+
+  .middle .content1 {
+    font-size: 1.8vw; /* Slightly larger for better readability in portrait */
+  }
+
+  .partners-penguins img {
+    max-width: 30vw; /* Larger image in portrait */
+  }
+
+  .why-text {
+    font-size: 5vw;
+  }
+
+  .why-item h4 {
+    font-size: 3.5vw;
+  }
+
+  .why-item p {
+    font-size: 2vw;
+    text-align: center;
+  }
+}
+
+/* Landscape adjustments for all devices */
+@media (orientation: landscape) {
+  .title-wrapper .title {
+    font-size: 4vw; /* Slightly smaller in landscape */
+  }
+
+  .middle .content1 {
+    font-size: 1.4vw;
+  }
+
+  .partners-penguins img {
+    max-width: 15vw; /* Reduce image size in landscape */
+  }
+
+  .why-text {
+    font-size: 3.5vw;
+  }
+
+  .why-item h4 {
+    font-size: 2vw;
+  }
+
+  .why-item p {
+    font-size: 1.5vw;
+  }
+}
+
+/* Additional Responsive Media Queries */
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .title-wrapper .title {
+    font-size: 4rem;
+  }
+
+  .middle .content1 {
+    font-size: 1.6rem;
+  }
+
+  .why-text {
+    font-size: 3rem;
+  }
+
+  .why-item h4 {
+    font-size: 2rem;
+  }
+
+  .why-item p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablets (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .title-wrapper .title {
+    font-size: 3.5rem;
+  }
+
+  .middle .content1 {
+    font-size: 1.4rem;
+  }
+
+  .why-text {
+    font-size: 2.8rem;
+  }
+
+  .why-item h4 {
+    font-size: 2rem;
+  }
+
+  .why-item p {
+    font-size: 1.125rem;
+  }
+  .why-section {
+    margin-right: 17%;
+  }
+}
+
+/* Small tablets and large phones (600px to 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .title-wrapper .title {
+    font-size: 3rem;
+  }
+
+  .middle .content1 {
+    font-size: 1.3rem;
+  }
+
+  .why-text {
+    font-size: 2.5rem;
+  }
+
+  .why-item h4 {
+    font-size: 1.75rem;
+  }
+
+  .why-item p {
+    font-size: 1rem;
+  }
+  .why-section {
+    margin-right: 15%;
+  }
+}
+
+/* Phones (480px to 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .title-wrapper .title {
+    font-size: 2.8rem;
+  }
+
+  .middle .content1 {
+    font-size: 1.2rem;
+  }
+
+  .why-text {
+    align-self: center;
+    font-size: 2.2rem;
+  }
+
+  .why-item h4 {
+    font-size: 1.5rem;
+  }
+
+  .why-item p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  /* Hide image for small screens */
+  .partners-penguins {
+    display: none;
+  }
+  .why-section {
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column; /* Stack WHY above the content */
+    align-items: center; /* Center the WHY content horizontally */
+    justify-content: center;
+    margin-right: 15%;
+    width: 100%; /* Ensure the why-section takes full width */
+    text-align: center; /* Center text inside */
+  }
+
+  .why-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the WHY text and yellow rectangle horizontally */
+    margin: 0 auto; /* Center the why-left container */
+  }
+
+  .why-text {
+    display: block;
+    text-align: center; /* Center the text inside the block */
+    margin: 0; /* Remove any margins to ensure proper centering */
+    width: auto; /* Let the text take its natural width */
+  }
+
+  .yellow-rectangle {
+    display: none; /* Hide the yellow rectangle on smaller screens */
+  }
+}
+
+/* Small phones (below 480px) */
+@media (max-width: 479px) {
+  .title-wrapper .title {
+    font-size: 2.5rem;
+  }
+
+  .middle .content1 {
+    font-size: 1rem;
+  }
+
+  .why-text {
+    font-size: 2rem;
+  }
+
+  .why-item h4 {
+    font-size: 1.3rem;
+  }
+
+  .why-item p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .partners-penguins {
+    display: none;
+  }
+  /* Why section adjustments for centering */
+  .why-section {
+    margin-right: 0%;
+    display: flex;
+    flex-direction: column; /* Stack WHY above the content */
+    align-items: center; /* Center the WHY content horizontally */
+    justify-content: center;
+    width: 100%; /* Ensure the why-section takes full width */
+    text-align: center; /* Center text inside */
+  }
+
+  .why-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the WHY text and yellow rectangle horizontally */
+    margin: 0 auto; /* Center the why-left container */
+  }
+
+  .why-text {
+    display: block;
+    text-align: center; /* Center the text inside the block */
+    margin: 0; /* Remove any margins to ensure proper centering */
+    width: auto; /* Let the text take its natural width */
+  }
+
+  .yellow-rectangle {
+    display: none; /* Hide the yellow rectangle on smaller screens */
+  }
 }
