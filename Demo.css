@@ -1,10 +1,16 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400|Lexend+Deca:400,700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px; /* Base font size */
+}
 body {
-  font-family: "Lexend Deca", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f9ff;
-  color: #1a1a1a;
-  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .landpage {
@@ -14,342 +20,306 @@ body {
     rgb(245.33, 251.13, 255) 24.5%,
     rgb(255, 255, 255) 44%
   );
-  flex-direction: row;
-  justify-content: center;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  position: relative !important;
-}
-
-.landpage .div {
-  background-color: rgba(255, 255, 255, 1);
-  overflow: hidden;
-  width: 1440px;
-  min-height: 100%;
   position: relative;
-  padding-bottom: 55px;
 }
 
+/* Focus Style */
+button:focus-visible {
+  outline: 0.125rem solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 0.3125rem !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Use rem for responsive widths and heights */
 .landpage .overlap {
   position: absolute;
-  width: 1539px;
-  height: 2269px;
-  top: 1356px;
-  left: -99px;
+  width: 96rem;
+  height: 88.63rem;
+  top: 53rem;
+  left: -6.18rem;
 }
 
-.landpage .fridgi-icon-4 {
+.landpage .div-2 {
   position: absolute;
-  width: 149px;
-  height: 115px;
-  top: 0;
-  left: 1284px;
-}
-
-.landpage .bottom {
-  position: fixed;
-  width: 100%;
-  height: 55px;
-  bottom: 0;
-  left: 0;
-  background-color: #071e57;
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
-}
-
-.landpage .component {
-  position: relative;
-  width: 1403px;
-  height: 34px;
-  margin: 0 auto;
-  top: 10px;
-}
-
-.landpage .overlap-group-2 {
-  position: absolute;
-  width: 407px;
-  height: 30px;
-  top: 4px;
-  padding: 2px;
-  left: 29px;
-  display: flex;
-  align-items: center;
-}
-
-.landpage .product,
-.landpage .partners,
-.landpage .about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 29px;
-  position: absolute;
-  top: 0;
-  font-family: "Lexend Deca", Helvetica;
-  font-weight: 400;
-  color: #eef8ff;
-  font-size: 14px;
-  line-height: normal;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.landpage .product:hover,
-.landpage .partners:hover,
-.landpage .about:hover {
-  color: #3da9f1;
-}
-
-.landpage .product {
-  width: 151px;
-  left: 82px;
-}
-
-.landpage .partners {
-  width: 155px;
-  left: 183px;
-}
-
-.landpage .about {
-  width: 96px;
-  left: 311px;
-  top: 2px;
-}
-
-.landpage .logo {
-  position: relative;
-  display: flex;
-  width: 70px;
-  height: 29px;
-  align-items: center;
-  justify-content: center;
-  gap: 1px;
-  padding: 2px;
+  width: 84.18rem;
+  height: 82.65rem;
   top: 0;
   left: 0;
 }
 
-.landpage .fridgi-icon-5 {
-  position: relative;
-  width: 15px !important;
-  height: 17px !important;
-}
-
-.landpage .fridgi-logo {
-  position: relative;
-  width: 63px !important;
-  height: 20px !important;
-}
-
-.landpage .action-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 135px;
-  height: 34px;
-  padding: 5px 10px;
+.landpage .fridgi-icon {
   position: absolute;
-  top: 0;
-  left: 1268px;
-  background-color: #3da9f1;
-  border-radius: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  width: 5.62rem;
+  height: 5.87rem;
+  top: 65.74rem;
+  left: 45.08rem;
 }
 
-.landpage .action-button:hover {
-  background-color: #2b7cb9;
+/* Adjust phone size for responsiveness */
+.landpage .shopping-cart,
+.landpage .scan,
+.landpage .group,
+.landpage .dashboard {
+  width: 12rem; /* Reduced width */
+  height: 25rem; /* Reduced height */
+  background-size: 100% 100%;
 }
 
-.landpage .text-wrapper-7 {
-  font-family: "Lexend Deca", Helvetica;
-  font-weight: 400;
-  color: #071e57;
-  font-size: 14px;
-}
-
-.landpage .info-button {
-  all: unset;
-  font-family: "Lexend Deca", Helvetica;
-  font-weight: 400;
-  color: #eef8ff;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 76px;
-  height: 22px;
-  position: absolute;
-  top: 7px;
-  left: 1167px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.landpage .info-button:hover {
-  color: #3da9f1;
-}
-
-.landpage .top {
-  position: fixed;
-  width: 100%;
-  height: 55px;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.landpage .component-2 {
-  margin: auto;
-  position: fixed;
-  width: 1403px;
-  height: 34px;
-  top: 10px;
-}
-
-.landpage .why-fridgi-2 {
-  color: #365d75;
-  font-family: "Lexend Deca", Helvetica;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.landpage .why-fridgi-2:hover {
-  color: #3da9f1;
-}
-
-.landpage .logo img {
-  width: 35px;
+.landpage .shopping-cart-image,
+.landpage .screenshot,
+.landpage .dashboard-2 {
+  width: 10rem;
   height: auto;
+  object-fit: cover;
 }
 
-.landpage .fridgi-logo {
-  width: 150px;
-  height: auto;
+.landpage .fridgi-icon-2 {
+  position: absolute;
+  width: 14.19rem;
+  height: 14.69rem;
+  top: 41.06rem;
+  left: 0;
 }
 
-.landpage .action-button .text-wrapper-14 {
-  font-size: 14px;
-  font-family: "Lexend Deca", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  letter-spacing: 0;
-  line-height: normal;
+.landpage .overlap-wrapper {
+  position: absolute;
+  width: 18.13rem;
+  height: 19.14rem;
+  top: 36.13rem;
+  left: 30.35rem;
 }
 
+.landpage .overlap-2 {
+  position: relative;
+  height: 19.14rem;
+}
+
+.landpage .fridgi-icon-3 {
+  position: absolute;
+  width: 5.62rem;
+  height: 5.87rem;
+  top: 1.56rem;
+  left: 0;
+}
+
+.landpage .inventory {
+  position: absolute;
+  width: 14.88rem;
+  height: 19.14rem;
+  top: 0;
+  left: 2.03rem;
+  background-image: url(./img/phone.png);
+  background-size: 100% 100%;
+}
+
+.landpage .inventory-image {
+  position: absolute;
+  width: 12.31rem;
+  height: 15.86rem;
+  top: 1.64rem;
+  left: 0.78rem;
+  object-fit: cover;
+}
+
+.landpage .info {
+  width: 55.69rem;
+  height: 6.44rem;
+  position: absolute;
+  top: 48rem;
+  left: 20.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.63rem;
+}
+
+.landpage .simplify-your-wrapper {
+  padding: 0.94rem;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.63rem;
+}
 .main-content {
   position: relative;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: center;
+  padding-top: 3em;
+}
+/* Title wrapper and title */
+
+/* Title wrapper and title */
+.main-content .title {
+  font-size: 3rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #071e57;
+  z-index: 10;
+  position: relative;
+  font-family: "Lexend Deca";
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Ensure it takes full height of the viewport */
-  box-sizing: border-box;
-}
-/* Styles for the new main content section */
-.main-content .container {
-  padding: 20px;
 }
 
-.main-content .logo-section {
+/* Video */
+.phone video {
+  width: 60vw; /* Adjust size based on viewport */
+  max-width: 500px;
+  min-width: 250px;
+  height: 60vh;
+}
+
+/* Penguin Image */
+.phone {
+  width: 60vw; /* Adjust size based on viewport */
+
+  height: 60vh;
+}
+
+@media (max-width: 768px) {
+  .landpage .overlap {
+    width: 90%;
+    height: auto;
+    top: 60rem;
+  }
+
+  .landpage .shopping-cart,
+  .landpage .scan,
+  .landpage .group,
+  .landpage .dashboard {
+    width: 9rem; /* Further reduce for tablet */
+    height: auto;
+  }
+
+  .landpage .shopping-cart-image,
+  .landpage .screenshot,
+  .landpage .dashboard-2 {
+    width: 8rem; /* Ensure images scale down */
+    height: auto;
+  }
+
+  .landpage .info {
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .landpage .fridgi-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+/* Responsive adjustments for smaller screen sizes */
+@media (max-width: 768px) {
+  .main-content .title {
+    font-size: 2.5rem; /* Reduce the font size on smaller screens */
+  }
+}
+
+.phone {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.main-content .logo-section img {
-  width: 100px;
-  position: absolute;
-  width: 189px;
-  height: 162px;
-  left: 194px;
-  top: 80px;
-
-  background: url(image.png);
-  border-radius: 132px;
-}
-
-.main-content .title {
-  /* Meet Fridgi, your first kitchen AI manager. */
-
-  position: absolute;
-  width: 809px;
-  height: 156px;
-  left: 353px;
-  top: 85px;
-
-  font-family: "Lexend Deca";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 62px;
-  line-height: 78px;
-  text-align: center;
-
-  color: #071e57;
-}
-
-.main-content .phone {
-  position: absolute;
-  width: 422px;
-  height: 540px;
-  left: 467px;
-  top: 267px;
-  position: absolute;
-  width: 422px;
-  height: 540px;
-  left: 467px;
-  top: 267px;
-
-  background: url(image.png);
-  filter: drop-shadow(0px 4px 4px rgba(132, 151, 164, 0.74));
-  border-radius: 2px;
-}
-
-.main-content .phone video {
-  width: 550px;
-  height: 450px;
-  margin-bottom: 0;
-}
-.main-content .phone img {
-  width: 200;
+  justify-content: center;
+  margin-top: 4em;
+  position: relative;
+  width: 100%;
   height: auto;
 }
 
-.main-content .yellow-rectangle {
-  /* Rectangle 3 */
-
-  position: absolute;
-  width: 10px;
-  height: 145px;
-  left: 390px;
-  top: 96px;
-
-  background: #fdc404;
+.phone video {
+  width: 60vw; /* Use viewport width for scaling */
+  max-width: 500px;
+  min-width: 250px;
+  height: 60vh; /* Maintain a flexible height */
+  object-fit: contain; /* Ensure the video maintains aspect ratio */
 }
 
-.main-content .penguin {
-  position: absolute;
-  bottom: 80px;
-  right: -130px;
-  max-width: 250px;
-  height: 150px;
-  z-index: -1;
+/* Ensure phone container stays responsive in both landscape and portrait */
+@media (orientation: portrait) {
+  .phone video {
+    width: 90vw;
+    height: 70vh; /* Reduce height in portrait for better balance */
+  }
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-  flex: content;
+@media (orientation: landscape) {
+  .phone video {
+    width: 90vw;
+    height: 60vh;
+  }
+  .title {
+    font: 2rem sans-serif;
+  }
+}
+
+/* Additional media queries for smaller devices */
+@media (max-width: 480px) {
+  .phone video {
+    width: 90vw; /* Use full width for very small devices */
+    height: 60vh;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landpage .overlap {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+
+  .landpage .shopping-cart,
+  .landpage .scan,
+  .landpage .group,
+  .landpage .dashboard {
+    width: 7rem; /* Reduce size for mobile */
+    height: auto;
+  }
+
+  .landpage .shopping-cart-image,
+  .landpage .screenshot,
+  .landpage .dashboard-2 {
+    width: 6rem;
+    height: auto;
+  }
+
+  .landpage .info {
+    width: 90%;
+    height: auto;
+  }
+
+  .landpage .fridgi-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .landpage .fridgi-icon-2 {
+    width: 6rem;
+    height: 6rem;
+  }
 }
