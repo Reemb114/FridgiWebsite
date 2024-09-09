@@ -1,0 +1,926 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400|Lexend+Deca:400,700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.landpage {
+  background: linear-gradient(
+    180deg,
+    rgb(238, 248.2, 255) 10.5%,
+    rgb(245.33, 251.13, 255) 24.5%,
+    rgb(255, 255, 255) 44%
+  );
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 0.125rem solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 0.3125rem !important;
+}
+a {
+  text-decoration: none;
+}
+
+.landpage .overlap {
+  position: absolute;
+  width: 96rem;
+  height: 141.8125rem;
+  top: 84.75rem;
+  left: -6.18rem;
+}
+
+.landpage .div-2 {
+  position: absolute;
+  width: 84.18rem;
+  height: 132.25rem;
+  top: 0;
+  left: 0;
+}
+
+.landpage .fridgi-icon {
+  position: absolute;
+  width: 5.62rem;
+  height: 5.87rem;
+  top: 105.18rem;
+  left: 72.13rem;
+}
+
+.landpage .shopping-cart {
+  position: absolute;
+  width: 14.87rem;
+  height: 30.62rem;
+  top: 57.81rem;
+  left: 33.37rem;
+  background-size: 100% 100%;
+  background-image: url(./img/phone.png);
+}
+
+.landpage .shopping-cart-image {
+  position: absolute;
+  width: 12.12rem;
+  height: 26.37rem;
+  top: 2.81rem;
+  left: 1.37rem;
+  object-fit: cover;
+}
+
+.landpage .scan {
+  position: absolute;
+  width: 14.87rem;
+  height: 30.62rem;
+  top: 14.31rem;
+  left: 51.81rem;
+  background-image: url(./img/phone.png);
+  background-size: 100% 100%;
+}
+
+.landpage .screenshot {
+  position: absolute;
+  width: 12.3125rem;
+  height: 26.1875rem;
+  top: 2.8125rem;
+  left: 1.3125rem;
+}
+
+.landpage .group {
+  position: absolute;
+  width: 14.875rem;
+  height: 33.8125rem;
+  top: 11.125rem;
+  left: 33.375rem;
+}
+
+.landpage .overlap-group {
+  position: relative;
+  height: 33.8125rem;
+}
+
+.landpage .img {
+  position: absolute;
+  width: 4.625rem;
+  height: 3.625rem;
+  top: 0;
+  left: 8.75rem;
+}
+
+.landpage .dashboard {
+  position: absolute;
+  width: 14.875rem;
+  height: 30.625rem;
+  top: 3.1875rem;
+  left: 0;
+  background-image: url(./img/phone.png);
+  background-size: 100% 100%;
+}
+
+.landpage .dashboard-2 {
+  position: absolute;
+  width: 12.375rem;
+  height: 25.75rem;
+  top: 2.9375rem;
+  left: 1.25rem;
+}
+
+.landpage .fridgi-icon-2 {
+  position: fixed;
+  width: 13rem;
+  height: 13rem;
+  top: 50vh;
+  left: -5em;
+}
+
+.landpage .overlap-wrapper {
+  position: absolute;
+  width: 18.125rem;
+  height: 30.625rem;
+  top: 57.8125rem;
+  left: 48.5625rem;
+}
+
+.landpage .overlap-2 {
+  position: relative;
+  height: 30.625rem;
+}
+
+.landpage .fridgi-icon-3 {
+  position: absolute;
+  width: 5.625rem;
+  height: 5.875rem;
+  top: 2.5rem;
+  left: 0;
+}
+
+.landpage .inventory {
+  position: absolute;
+  width: 14.875rem;
+  height: 30.625rem;
+  top: 0;
+  left: 3.25rem;
+  background-image: url(./img/phone.png);
+  background-size: 100% 100%;
+}
+
+.landpage .inventory-image {
+  position: absolute;
+  width: 12.3125rem;
+  height: 25.375rem;
+  top: 2.625rem;
+  left: 1.25rem;
+  object-fit: cover;
+}
+
+.landpage .info {
+  width: 55.6875rem;
+  height: 6.4375rem;
+  position: absolute;
+  top: 48rem;
+  left: 20.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.landpage .rectangle {
+  position: relative;
+  align-self: stretch;
+  width: 0.6875rem;
+  background-color: #fdc404;
+}
+
+.landpage .simplify-your-wrapper {
+  padding: 0.9375rem;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.landpage .simplify-your {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  margin-top: -0.0625rem;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .text-wrapper {
+  font-weight: 700;
+  color: #071e57;
+}
+
+.landpage .span {
+  color: #3e527f;
+  font-size: 1.125rem;
+}
+
+.landpage .info-2 {
+  width: 62.9375rem;
+  height: 8.0625rem;
+  position: absolute;
+  top: 0;
+  left: 21.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.landpage .text-wrapper-2 {
+  color: #000000;
+}
+
+.landpage .text-wrapper-3 {
+  color: #071e57c2;
+  font-size: 1.125rem;
+}
+
+.landpage .text-wrapper-4 {
+  color: #071e57c2;
+}
+
+.landpage .info-3 {
+  width: 59.5625rem;
+  height: 6.375rem;
+  position: absolute;
+  top: 92.125rem;
+  left: 21.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.landpage .p {
+  color: #071e57;
+  font-size: 20px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .text-wrapper-5 {
+  font-weight: 700;
+}
+
+.landpage .text-wrapper-6 {
+  font-size: 18px;
+}
+
+.landpage .feel {
+  position: absolute;
+  width: 238px;
+  height: 490px;
+  top: 1624px;
+  left: 433px;
+  background-image: url(./img/phone.png);
+  background-size: 100% 100%;
+}
+
+.landpage .overlap-3 {
+  position: absolute;
+  width: 215px;
+  height: 182px;
+  top: 134px;
+  left: 11px;
+}
+
+.landpage .image {
+  position: absolute;
+  width: 36px;
+  height: 65px;
+  top: 1px;
+  left: 0;
+}
+
+.landpage .image-2 {
+  position: absolute;
+  width: 195px;
+  height: 182px;
+  top: 0;
+  left: 19px;
+}
+
+.landpage .image-3 {
+  position: absolute;
+  width: 36px;
+  height: 26px;
+  top: 56px;
+  left: 28px;
+  object-fit: cover;
+}
+
+.landpage .overlap-group-wrapper {
+  position: absolute;
+  width: 238px;
+  height: 490px;
+  top: 1626px;
+  left: 694px;
+}
+
+.landpage .flavor {
+  position: absolute;
+  width: 238px;
+  height: 490px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/phone.png);
+  background-size: 100% 100%;
+}
+
+.landpage .image-4 {
+  position: absolute;
+  width: 212px;
+  height: 143px;
+  top: 172px;
+  left: 13px;
+}
+
+.landpage .image-wrapper {
+  position: absolute;
+  width: 238px;
+  height: 490px;
+  top: 1626px;
+  left: 953px;
+  background-image: url(./img/phone.png);
+  background-size: 100% 100%;
+}
+
+.landpage .image-5 {
+  position: absolute;
+  width: 200px;
+  height: 406px;
+  top: 42px;
+  left: 19px;
+  object-fit: cover;
+}
+
+.landpage .overlap-4 {
+  position: absolute;
+  width: 1440px;
+  height: 155px;
+  top: 2114px;
+  left: 99px;
+}
+
+.landpage .fridgi-icon-4 {
+  position: absolute;
+  width: 149px;
+  height: 115px;
+  top: 0;
+  left: 1284px;
+}
+
+.landpage .overlap-group-2 {
+  position: absolute;
+  width: 407px;
+  height: 30px;
+  top: 4px;
+  left: 29px;
+}
+
+.landpage .overlap-5 {
+  position: absolute;
+  width: 1252px;
+  height: 171px;
+  top: 128px;
+  left: 93px;
+}
+
+.landpage .your-kitchen-s-new {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #071e57;
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .text-wrapper-8 {
+  position: absolute;
+  top: 91px;
+  left: 253px;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #fdc404;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .text-wrapper-9 {
+  position: absolute;
+  top: 1221px;
+  left: 322px;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #fdc404;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .overlap-6 {
+  position: absolute;
+  width: 1449px;
+  height: 704px;
+  top: 429px;
+  left: 67px;
+}
+
+.landpage .overlap-7 {
+  position: absolute;
+  width: 1449px;
+  height: 673px;
+  top: 31px;
+  left: 0;
+}
+
+.landpage .overlap-8 {
+  position: absolute;
+  width: 1220px;
+  height: 673px;
+  top: 0;
+  left: 229px;
+}
+
+.landpage .text-wrapper-10 {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 700;
+  color: #071e57;
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .div-wrapper {
+  width: 1041px;
+  height: 206px;
+  padding: 15px;
+  position: absolute;
+  top: 41px;
+  left: 0;
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.landpage .simplify-your-2 {
+  color: #071e57c2;
+  font-size: 24px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .frame {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  height: 103px;
+  align-items: flex-start;
+  top: 214px;
+  left: 264px;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.landpage .download-fridgi-wrapper {
+  display: flex;
+  height: 63px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #3da9f1;
+  border-radius: 21px;
+}
+.landpage .download-fridgi-wrapper:hover {
+  background-color: #106aa7;
+}
+
+.landpage .download-fridgi {
+  font-size: 20px;
+  position: relative;
+  width: fit-content;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .group-2 {
+  position: absolute;
+  width: 381px;
+  height: 297px;
+  top: 376px;
+  left: 677px;
+}
+
+.landpage .overlap-9 {
+  position: relative;
+  width: 379px;
+  height: 297px;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+
+.landpage .frame-2 {
+  display: inline-flex;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 23px;
+  left: 46px;
+}
+
+.landpage .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -3.22px;
+  margin-bottom: -1.22px;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 700;
+  color: #0d0c5e;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .text-wrapper-12 {
+  position: absolute;
+  width: 327px;
+  top: 90px;
+  left: 23px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: #071e57c2;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landpage .fridgi-icon-6 {
+  position: fixed;
+  width: 10em; /* Set width relative to viewport width */
+  height: 10em; /* Maintain aspect ratio */
+  top: 22vh;
+  right: -4em; /* Position relative to viewport height */
+}
+
+.landpage .group-3 {
+  position: absolute;
+  width: 381px;
+  height: 297px;
+  top: 371px;
+  left: 0;
+}
+
+.landpage .frame-3 {
+  display: inline-flex;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  top: 25px;
+  left: 30px;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.landpage .group-4 {
+  position: absolute;
+  width: 381px;
+  height: 297px;
+  top: 371px;
+  left: 453px;
+}
+
+.landpage .image-6 {
+  position: relative;
+  width: 14em;
+  height: 14em;
+  top: 1vh;
+  left: -38em;
+}
+
+.landpage .text-wrapper-13 {
+  position: absolute;
+  width: 413px;
+  height: 60px;
+  top: 312px;
+  left: 512px;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #071e57;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Navbars */
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landpage .top,
+.landpage .bottom {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.landpage .bottom {
+  bottom: 0;
+  background-color: #071e57;
+}
+
+/* Logo and navigation */
+.landpage .component-2,
+.landpage .component {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Ensures left and right are spaced */
+  align-items: center;
+  padding: 0;
+}
+
+.landpage .left-nav,
+.landpage .right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.landpage .left-nav {
+  justify-content: flex-start; /* Align left nav to the left */
+}
+
+.landpage .right-nav {
+  justify-content: flex-end; /* Align right nav to the right */
+}
+
+.landpage .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.landpage .fridgi-icon-5 {
+  width: 20px !important;
+  height: auto;
+  margin-right: 10px;
+}
+
+.landpage .fridgi-logo {
+  width: auto !important;
+  height: 20px !important;
+  margin-right: 20px;
+}
+
+.landpage .component-2 .partners,
+.landpage .component-2 .about,
+.landpage .component-2 .product,
+.landpage .component-2 .info-button,
+.landpage .component-2 .action-button {
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #071e57;
+  font-size: 14px;
+  line-height: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0 10px;
+}
+
+.landpage .component .product,
+.landpage .component .partners,
+.landpage .component .about,
+.landpage .component .info-button,
+.landpage .component .action-button {
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0 10px;
+}
+
+.landpage .product:hover,
+.landpage .partners:hover,
+.landpage .about:hover,
+.landpage .info-button:hover,
+.landpage .component-2 .info-button:hover {
+  color: #3da9f1;
+}
+
+/* Adjusted action button and contact positioning */
+.landpage .action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #3da9f1;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15px;
+}
+
+.landpage .action-button:hover {
+  background-color: #2b7cb9;
+}
+
+.landpage .text-wrapper-14 {
+  font-size: 14px;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #071e57;
+  margin: 0.4em;
+}
+
+.landpage .text-wrapper-7 {
+  font-size: 14px;
+  font-family: "Lexend Deca", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0.4em;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f9ff;
+  color: #1a1a1a;
+  text-align: center;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  max-width: 68.75rem; /* 1100px */
+  margin: 0 auto;
+}
+
+/* Responsive adjustments for the navbar */
+@media (max-width: 768px) {
+  .landpage .component-2 .product,
+  .landpage .component-2 .info-button,
+  .landpage .component-2 .action-button {
+    display: none; /* Hide Product, Contact Us, and Download in the top navbar */
+  }
+
+  .landpage .component-2 .partners,
+  .landpage .component-2 .about {
+    display: inline-flex; /* Keep Partners and About in the top navbar */
+  }
+
+  .landpage .component-2 .logo {
+    display: inline-flex; /* Keep the logo in the top navbar */
+  }
+
+  .landpage .component,
+  .landpage .component-2 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .landpage .bottom .product,
+  .landpage .bottom .partners,
+  .landpage .bottom .about,
+  .landpage .bottom .logo {
+    display: none; /* Hide Product, Partners, and About in the bottom navbar */
+  }
+
+  .landpage .bottom .info-button,
+  .landpage .bottom .action-button {
+    display: inline-flex; /* Show Contact Us and Download in the bottom navbar */
+    color: #ffffff;
+  }
+
+  .landpage .action-button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .landpage .logo img {
+    width: 20px;
+  }
+
+  .landpage .fridgi-logo {
+    width: 80px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .landpage .component,
+  .landpage .component-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landpage .partners,
+  .landpage .about {
+    font-size: 10px;
+    padding: 3px;
+  }
+
+  .landpage .action-button {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+
+  .landpage .logo img {
+    width: 15px;
+  }
+
+  .landpage .fridgi-logo {
+    width: 60px;
+    height: auto;
+  }
+}
+
+.landpage .info-button {
+  background-color: transparent;
+  border: none;
+  color: #071e57;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0 10px;
+}
