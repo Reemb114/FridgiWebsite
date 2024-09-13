@@ -14,12 +14,7 @@ body {
 }
 
 .landpage {
-  background: linear-gradient(
-    180deg,
-    rgb(238, 248.2, 255) 10.5%,
-    rgb(245.33, 251.13, 255) 24.5%,
-    rgb(255, 255, 255) 44%
-  );
+  background: #ffffff;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -188,7 +183,7 @@ a {
   max-width: 500px;
   min-width: 250px;
   height: 60vh;
-}
+
 
 /* Penguin Image */
 .phone {
