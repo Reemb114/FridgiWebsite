@@ -108,6 +108,16 @@
 .content3 a {
   color: #fdc404;
   font-weight: 300;
+  text-align: center; /* Ensure email is centered below title */
+  margin-top: 0.2rem;
+}
+/* Align titles and emails consistently */
+.content3 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Align titles above the emails */
+  margin-bottom: 0.2rem; /* Add space between each entry */
 }
 .content3 a:hover {
   color: #e7b102;
