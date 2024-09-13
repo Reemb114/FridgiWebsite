@@ -25,7 +25,7 @@
 
 .title-wrapper .title {
   font-weight: 400;
-  font-size: 5vw; /* Responsive text size based on viewport width */
+  font-size: 5em; /* Responsive text size based on viewport width */
   line-height: 1.2;
   color: #071e57;
   text-align: center;
@@ -35,7 +35,7 @@
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 400;
-  font-size: 4vw;
+  font-size: 4em;
   line-height: 1.2;
   margin-bottom: 0.2em;
   color: #fdc404;
@@ -47,6 +47,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 0.6em;
 }
 
 .sub-sub-title-wrapper {
@@ -61,12 +62,16 @@
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 1.5em;
   line-height: 1.2;
   color: #071e57;
+  margin-top: 0.2em;
 }
 
 .welcome-wrapper {
+  margin-top: 0.3em;
+  border-radius: 24px;
+  background: #fff;
   display: flex;
   justify-content: center;
   max-width: 80%; /* Center the welcome section horizontally */
@@ -75,16 +80,16 @@
 /* Mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
   .button-watch-demo {
-    width: 200px; /* Slightly smaller button for mobile */
-    height: 80px; /* Adjust height */
+    width: 15em; /* Slightly smaller button for mobile */
+    height: 6em; /* Adjust height */
   }
 }
 
 /* Tablet devices (max-width: 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
   .button-watch-demo {
-    width: 240px; /* Adjust button width for tablets */
-    height: 90px; /* Adjust button height for tablets */
+    width: 15em; /* Adjust button width for tablets */
+    height: 6em; /* Adjust button height for tablets */
   }
 }
 
@@ -111,18 +116,18 @@
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.7vw;
+  font-size: 1.7rem;
   line-height: 1.2;
   color: #071e57;
 }
 
 .content1 {
-  min-width: 50%;
-  max-width: 90%;
+  min-width: 70%;
+  max-width: 100%;
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 2em;
   color: rgba(7, 30, 87, 0.76);
   flex: none;
@@ -138,8 +143,8 @@
   gap: 2em;
   margin-top: 2em; /* Use margin for vertical spacing */
 
-  width: 264px; /* Fixed width in pixels (matches your preference at 1040px screen size) */
-  height: 103px; /* Fixed height in pixels */
+  width: 6em; /* Fixed width in pixels (matches your preference at 1040px screen size) */
+  height: 6em; /* Fixed height in pixels */
   z-index: 1;
 }
 
@@ -170,7 +175,7 @@
   gap: 2em;
   justify-content: center;
   padding: 2em;
-  margin-top: 7vh; /* Space below the demo button */
+  margin-top: 4vh; /* Space below the demo button */
 
   background: linear-gradient(
     180deg,
@@ -241,10 +246,10 @@
 }
 .left-side-penguin {
   position: fixed;
-  width: 13rem;
-  height: 13rem;
+  width: 11rem;
+  height: 11rem;
   top: 50vh;
-  left: -5em;
+  left: -4em;
 }
 .left-side-penguin img {
   width: 100%;
@@ -255,37 +260,47 @@
 
 /* Mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
-  .title-wrapper .title,
-  .sub-title-wrapper .title {
-    font-size: 7vw;
+  .title-wrapper .title {
+    font-size: 2.7rem;
   }
+  .sub-title-wrapper .title {
+    font-size: 2rem;
+  }
+
   .sub-sub-title-wrapper {
-    width: 100%;
+    width: 100%; /* Ensure it takes the full width of its parent */
+    min-width: 75%; /* Adjust the min-width as needed */
   }
 
   .sub-sub-title-wrapper .title {
-    font-size: 2.4vw;
+    font-size: 1.2rem;
   }
 
   .Fridgi-welcome img {
     display: none;
   }
+  .welcome {
+    width: 100%;
+    min-width: 80%;
+  }
   .title1 {
-    font-size: 3vw;
+    margin-top: 1em;
+    font-size: 1.5rem;
   }
   .content1 {
-    font-size: 2.7vw;
+    margin: 0.5em;
+    font-size: 1.2rem;
   }
 
   .button-watch-demo {
-    width: 50vw;
-    height: 8vh; /* Full width for buttons on mobile */
+    width: 15em;
+    height: 6em; /* Full width for buttons on mobile */
   }
 
   .right-side-penguin,
   .left-side-penguin {
-    width: 7em;
-    height: 7em;
+    width: 6em;
+    height: 6em;
   }
 
   .features-wrapper {
@@ -299,13 +314,20 @@
 
 /* Tablet devices (max-width: 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .title-wrapper .title,
+  .title-wrapper .title {
+    font-size: 4.2rem;
+  }
   .sub-title-wrapper .title {
-    font-size: 5vw;
+    font-size: 3.5rem;
+  }
+
+  .sub-sub-title-wrapper {
+    width: 100%; /* Ensure it takes the full width of its parent */
+    min-width: 70%; /* Adjust the min-width as needed */
   }
 
   .sub-sub-title-wrapper .title {
-    font-size: 3vw;
+    font-size: 2em;
   }
 
   .Fridgi-welcome img {
@@ -314,25 +336,33 @@
   }
 
   .button-watch-demo {
-    width: 50vw;
-    height: 9vh;
+    width: 16em;
+    height: 6em;
   }
 
   .right-side-penguin,
   .left-side-penguin {
-    width: 9em;
-    height: 9em;
+    width: 6em;
+    height: 6em;
   }
 }
 
 /* Desktop (min-width: 1025px) */
 @media (min-width: 1025px) {
   .title-wrapper .title {
-    font-size: 4vw;
+    font-size: 4.2rem;
+  }
+  .sub-title-wrapper .title {
+    font-size: 3.5rem;
+  }
+
+  .sub-sub-title-wrapper {
+    width: 100%; /* Ensure it takes the full width of its parent */
+    min-width: 70%; /* Adjust the min-width as needed */
   }
 
   .sub-sub-title-wrapper .title {
-    font-size: 2vw;
+    font-size: 2em;
   }
 
   .Fridgi-welcome img {
@@ -341,26 +371,26 @@
   }
 
   .button-watch-demo {
-    width: 16.5vw;
-    height: 8vh;
+    width: 15em;
+    height: 6em;
   }
 
   .right-side-penguin,
   .left-side-penguin {
-    width: 10em;
-    height: 10em;
+    width: 6em;
+    height: 6em;
   }
   .content1 {
-    font-size: 1.3vw;
+    font-size: 1.3rem;
   }
 }
 
 .right-side-penguin {
   position: fixed;
-  width: 10em;
-  height: 10em;
+  width: 9em;
+  height: 9em;
   top: 22vh;
-  right: -4em;
+  right: -3.8em;
 }
 
 .right-side-penguin img {
@@ -369,10 +399,10 @@
 }
 .left-side-penguin {
   position: fixed;
-  width: 13rem;
-  height: 13rem;
+  width: 10rem;
+  height: 10rem;
   top: 50vh;
-  left: -5em;
+  left: -4.4em;
 }
 .left-side-penguin img {
   width: 100%;
