@@ -141,7 +141,7 @@
   align-items: center; /* Center content horizontally */
   padding: 1em;
   gap: 2em;
-  margin-top: 2em; /* Use margin for vertical spacing */
+  margin-top: 2em;
 
   width: 6em; /* Fixed width in pixels (matches your preference at 1040px screen size) */
   height: 6em; /* Fixed height in pixels */
@@ -161,7 +161,10 @@
   border-radius: 1.3em; /* Adjust border radius as needed */
   font-size: 1.3rem; /* Adjust font size as needed */
   cursor: pointer;
-  box-sizing: border-box; /* Ensure padding is included in the total width/height */
+  box-sizing: border-box;
+  top: 21vh !important ; /* Use margin for vertical spacing */
+
+  /* Ensure padding is included in the total width/height */
 }
 
 .watch-demo-button:hover {
@@ -236,7 +239,7 @@
   position: fixed;
   width: 10em;
   height: 10em;
-  top: 22vh;
+  top: 23vh;
   right: -4em;
 }
 
@@ -273,7 +276,7 @@
   }
 
   .sub-sub-title-wrapper .title {
-    font-size: 1.2rem;
+    display: none;
   }
 
   .Fridgi-welcome img {
@@ -290,6 +293,7 @@
   .content1 {
     margin: 0.5em;
     font-size: 1.2rem;
+    min-width: 90% !important;
   }
 
   .button-watch-demo {
@@ -301,6 +305,9 @@
   .left-side-penguin {
     width: 6em;
     height: 6em;
+  }
+  .right-side-penguin {
+    top: 24vh !important;
   }
 
   .features-wrapper {
